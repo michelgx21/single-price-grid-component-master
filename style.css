@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+     --GrayishBlue: hsl(218, 22%, 67%);
+}
+body{
+    background-color: var(--LightGray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'karla',sans-serif ;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 5px 10px 10px rgba(0,0,0, 0.05);
+    margin: auto;
+    overflow: hidden;
+    width: 800px;
+}
+section{
+    padding: 35px;
+}
+.section1 h2{
+    color: var(--BrightYellow);
+}
+.section1 p{
+    color: var(--GrayishBlue);
+    margin: 7px;
+}
+h1{
+    color: var(--Cyan);
+    font-size: 30px;
+}
+
+.row{
+    display: flex;
+}
+.row  section{
+    flex: 1;
+}
+.section2{
+    background-color: var(--Cyan);
+    color: white;
+}
+.price{
+    color: hsl(179, 43%, 75%);
+    display: flex;
+    align-items: center;
+}
+.price span{
+    font-size: 50px;
+    color: white;
+    margin-right: 10px;
+}
+button{
+    background-color: var(--BrightYellow);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 10px rgba(0,0,0, 0.05);
+    font-family: 'karla',sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 0;
+    margin-top: 15px;
+    width: 100%;
+    color: white;
+}
+
+.section3{
+    background-color: hsl(179, 47%, 52%);
+    color: white;
+}
+
+.section3 p{
+    padding: 0px;
+    opacity: 0.7;
+    line-height: 28px;
+}
+
+@media screen and (max-width:1200px) {
+    .row{
+        flex-direction: column;
+    }
+
+    main{
+        max-width: 375px;
+        width: 375px;
+    }
+    
+}
